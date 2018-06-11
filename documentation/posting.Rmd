@@ -133,7 +133,7 @@ tbl_smr %.>% ggplot(.) +
   facet_grid(.~group, scales = "free_y") + 
   ggtitle("Sampling Income Mean") + 
   xlab("rank(descending order)") + 
-  ylab("Quarterly income") +
+  ylab("income difference(2018-2017)") +
   theme_economist()
   
 tbl_smr %.>% ggplot(.) + 
