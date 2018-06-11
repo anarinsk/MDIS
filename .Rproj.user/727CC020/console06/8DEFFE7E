@@ -12,63 +12,23 @@ Changes not staged for commit:[0K
         [0;31mmodified:   .Rproj.user/727CC020/console06/8DEFFE7E[0m[0K
         [0;31mmodified:   .Rproj.user/727CC020/console06/INDEX001[0m[0K
         [0;31mmodified:   .Rproj.user/727CC020/sources/prop/7E2276BA[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/33B8A2E0[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/33B8A2E0-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/4A7B6864[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/4A7B6864-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/5308E105[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/5308E105-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/7EB10451-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/8E3BF133-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/C0ADB462[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/C0ADB462-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/D79AE788[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/D79AE788-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/F54040F[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/F54040F-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/lock_file[0m[0K
-        [0;31mmodified:   .Rproj.user/shared/notebooks/1E980E6F-posting/1/s/chunks.json[0m[0K
-        [0;31mmodified:   code/code_analysis.R[0m[0K
-        [0;31mmodified:   documentation/posting.Rmd[0m[0K
-[0K
-Untracked files:[0K
-  (use "git add <file>..." to include in what will be committed)[0K
-[0K
-        [0;31m.gitignore[0m[0K
+        [0;31mdeleted:    .Rproj.user/shared/notebooks/1E980E6F-posting/1/s/c7av92xx0hzck/[0K0
+00002.csv[0m[0K
+        [0;31mdeleted:    .Rproj.user/shared/notebooks/1E980E6F-posting/1/s/c7av92xx0hzck/[0K0
+00003.metadata[0m[0K
+        [0;31mdeleted:    .Rproj.user/shared/notebooks/1E980E6F-posting/1/s/c7av92xx0hzck/[0K0
+00003.png[0m[0K
+        [0;31mdeleted:    .Rproj.user/shared/notebooks/1E980E6F-posting/1/s/c7av92xx0hzck/[0K0
+00003.snapshot[0m[0K
+        [0;31mdeleted:    .Rproj.user/shared/notebooks/1E980E6F-posting/1/s/c7av92xx0hzck/[0K0
+00004.csv[0m[0K
+        [0;31mdeleted:    .Rproj.user/shared/notebooks/1E980E6F-posting/1/s/c7av92xx0hzck/[0K0
+00005.metadata[0m[0K
+        [0;31mdeleted:    .Rproj.user/shared/notebooks/1E980E6F-posting/1/s/c7av92xx0hzck/[0K0
+00005.png[0m[0K
+        [0;31mdeleted:    .Rproj.user/shared/notebooks/1E980E6F-posting/1/s/c7av92xx0hzck/[0K0
+00005.snapshot[0m[0K
 [0K
 no changes added to commit (use "git add" and/or "git commit -a")[0K
-PS F:\GitHub\MDIS>[0K[20G[?25h[?25lPS F:\GitHub\MDIS> g[0K[?25hi[0Kt[0K[24G[?25lPS F:\GitHub\MDIS> git a[0K[?25hd[0Kd[0K[28G[?25lPS F:\GitHub\MDIS> git add ,.[0K[?25h[31G[30G[?25lPS F:\GitHub\MDIS> git add ,[0K[?25h[?25lPS F:\GitHub\MDIS> git add[0K[28G[?25h[?25lPS F:\GitHub\MDIS> git add .[0K[?25h[30G[?25l
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/727CC020/sources/prop/7E2276BA.[0K[?25l
-The file will have its original line endings in your working directory.[0K
-[0K[?25hPS F:\GitHub\MDIS>[0K[20G[?25lPS F:\GitHub\MDIS> g[0K[?25hi[0Kt[0K[24G[?25lPS F:\GitHub\MDIS> git o[0K[?25h[?25lPS F:\GitHub\MDIS> git[0K[24G[?25h[?25lPS F:\GitHub\MDIS> git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[31G[?25lPS F:\GitHub\MDIS> git commit 0-[0K[?25h[?25lPS F:\GitHub\MDIS> git commit 0[0K[?25h[?25lPS F:\GitHub\MDIS> git commit[0K[31G[?25h[?25lPS F:\GitHub\MDIS> git commit -[0K[?25hm[0K[34G[?25lPS F:\GitHub\MDIS> git commit -m "[0K[?25h"[0K[35G[?25lPS F:\GitHub\MDIS> git commit -m "1"[0K[36G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "18"[0K[37G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180"[0K[38G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "1806"[0K[39G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "18061"[0K[40G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611"[0K[41G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@"[0K[42G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@N"[0K[43G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC"[0K[44G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC "[0K[45G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC ."[0K[46G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC . "[0K[47G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC ."[0K[46G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC "[0K[45G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC"[0K[44G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC/"[0K[45G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC/p"[0K[46G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC/po"[0K[47G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC/pos"[0K[48G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC/post"[0K[49G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC/posti"[0K[50G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC/postin"[0K[51G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC/posting"[0K[52G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC/posting."[0K[53G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC/posting.h"[0K[54G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC/posting.ht"[0K[55G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC/posting.htm"[0K[56G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC/posting.html"[0K[57G[?25h[58G[?25l
-[0K[?25h[master e37a7d1] 180611@NC/posting.html[0K[?25l
- 22 files changed, 57 insertions(+), 607 deletions(-)[0K
- rewrite .Rproj.user/727CC020/console06/8DEFFE7E (93%)[0K
- rewrite .Rproj.user/727CC020/console06/INDEX001 (100%)[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/33B8A2E0[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/33B8A2E0-contents[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/4A7B6864[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/4A7B6864-contents[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/5308E105[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/5308E105-contents[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/7EB10451-contents[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/8E3BF133-contents[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/C0ADB462[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/C0ADB462-contents[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/D79AE788[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/D79AE788-contents[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/F54040F[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/F54040F-contents[0K
- delete mode 100644 .Rproj.user/727CC020/sources/s-D71AEF68/lock_file[0K
- create mode 100644 .gitignore[0K
-PS F:\GitHub\MDIS>[0K[20G[?25h[?25lPS F:\GitHub\MDIS> g[0K[?25hi[0Kt[0K[24G[?25lPS F:\GitHub\MDIS> git p[0K[?25hu[0Ks[0Kh[0K[29G[?25l
-[0K[?25hCounting objects: 20, done.[0K[?25l
-Delta compression using up to 8 threads.[0K
-Compressing objects: 100% (16/16), done.[0K
-Writing objects:  55% (11/20)[0K[1G[?25hWriting objects: 100% (20/20), 2.34 KiB | 478.00 KiB/s, done.[0K[?25l
-Total 20 (delta 6), reused 0 (delta 0)[0K
-[0K[?25hremote: Resolving deltas: 100% (6/6), completed with 6 local objects.[0K[?25l
-[0K[?25hTo https://github.com/anarinsk/MDIS.git[0K[?25l
-   7afa95b..e37a7d1  master -> master[0K
-[0K[?25hPS F:\GitHub\MDIS>[0K[20G[?25lPS F:\GitHub\MDIS> git push[0K[29G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "180611@NC/posting.html"[0K[?25h[?25lPS F:\GitHub\MDIS> git add .[0K[30G[?25h[?25l
+PS F:\GitHub\MDIS>[0K[20G[?25h[?25lPS F:\GitHub\MDIS> g[0K[?25hi[0Kt[0K[24G[?25lPS F:\GitHub\MDIS> git a[0K[?25hd[0Kd[0K[28G[?25lPS F:\GitHub\MDIS> git add .[0K[?25h[30G[?25l
 [0K[?25h

@@ -1,8 +1,0 @@
-"0","tbl_smr %.>% ggplot(.) + "
-"0","  aes(x = rank_sample, y = Y18-Y17) + "
-"0","  geom_col(color = ""black"") + "
-"0","  facet_grid(.~group, scales = ""free_y"") + "
-"0","  ggtitle(""Sampling Income Mean"") + "
-"0","  xlab(""rank(descending order)"") + "
-"0","  ylab(""Quarterly income"") +"
-"0","  theme_economist()"
