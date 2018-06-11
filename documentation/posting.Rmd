@@ -138,7 +138,7 @@ tbl_smr %.>% ggplot(.) +
   theme_economist()
   
 tbl_smr %.>% ggplot(.) + 
-  aes(x = rank_sample, y = (Y18-Y17)/Y17) + 
+  aes(x = rank_sample, y = (Y18-Y17)*100/Y17) + 
   geom_col(color = "black") + 
   facet_wrap(~group, ncol=2) + 
   ggtitle("Sampling Income Change") + 
