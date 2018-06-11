@@ -202,6 +202,10 @@ tbl_smr %.>% ggplot(.) +
   ylab("Change(%)") +
   theme_economist() 
 
+### Try ggridges() ----
+
+sim_ndraw(10000, c(1,2), c(vars_basic, "V106")) -> ttl1
+sim_ndraw(10000, c(1), c(vars_basic, "V106"))   -> ttl2
 
 ttl1 %.>%
   group_by(., V1, rd) %.>% 
