@@ -1,23 +1,41 @@
 [0m[0K]0;관리자:  Windows PowerShell[0K[?25l
 Copyright (C) 2009 Microsoft Corporation. All rights reserved.[0K
 [0K
-[0K[?25hPS F:\GitHub\MDIS>[0K[20G[?25lPS F:\GitHub\MDIS> 햣[0K[23G[?25h[22G[?25lPS F:\GitHub\MDIS>[0K[20G[?25h[?25lPS F:\GitHub\MDIS> g[0K[?25hi[0Kt[0K[24G[?25lPS F:\GitHub\MDIS> git s[0K[?25ht[0Ka[0Kt[0Ku[0Ks[0K[31G[?25l
-[0K[?25hfatal: Not a git repository (or any of the parent directories): .git[0K[?25l
-PS F:\GitHub\MDIS>[0K[20G[?25h[?25lPS F:\GitHub\MDIS> g[0K[?25hi[0Kt[0K[24G[?25lPS F:\GitHub\MDIS> git i[0K[?25hn[0Ki[0Kt[0K[29G[?25l
-[0K[?25hInitialized empty Git repository in F:/GitHub/MDIS/.git/[0K[?25l
-PS F:\GitHub\MDIS>[0K[20G[?25h[?25lPS F:\GitHub\MDIS> g[0K[?25hi[0Kr[0K[24G[23G[?25lPS F:\GitHub\MDIS> gi[0K[?25ht[0K[24G[23G[?25lPS F:\GitHub\MDIS> gi[0K[?25h[?25lPS F:\GitHub\MDIS> g[0K[?25h[?25lPS F:\GitHub\MDIS>[0K[20G[?25h[?25lPS F:\GitHub\MDIS> e[0K[?25hc[0Kh[0Ko[0K[25G[?25lPS F:\GitHub\MDIS> echo "[0K[?25h"[0K[26G[?25lPS F:\GitHub\MDIS> echo "#"[0K[27G[?25h[?25lPS F:\GitHub\MDIS> echo "# "[0K[28G[?25h[?25lPS F:\GitHub\MDIS> echo "# M"[0K[29G[?25h[?25lPS F:\GitHub\MDIS> echo "# MD"[0K[30G[?25h[?25lPS F:\GitHub\MDIS> echo "# MDI"[0K[31G[?25h[?25lPS F:\GitHub\MDIS> echo "# MDIS"[0K[32G[?25h[33G[34G[?25lPS F:\GitHub\MDIS> echo "# MDIS" >[0K[?25h>[0K[37G[?25lPS F:\GitHub\MDIS> echo "# MDIS" >> R[0K[?25hE[0KA[0KD[0KM[0KE[0K.[0Km[0Kd[0K[47G[?25l
-[0K[?25hPS F:\GitHub\MDIS>[0K[20G[?25lPS F:\GitHub\MDIS> g[0K[?25hi[0Kt[0K[24G[?25lPS F:\GitHub\MDIS> git a[0K[?25hd[0Kd[0K[28G[?25lPS F:\GitHub\MDIS> git add R[0K[?25hE[0KA[0KD[0KM[0KE[0K.[0Km[0Kd[0K[38G[?25l
-[0K[?25hPS F:\GitHub\MDIS>[0K[20G[?25lPS F:\GitHub\MDIS> g[0K[?25hi[0Kt[0K[24G[?25lPS F:\GitHub\MDIS> git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[31G[?25lPS F:\GitHub\MDIS> git commit 0[0K[?25hm[0K[?25lPS F:\GitHub\MDIS> git commit 0[0K[?25h[?25lPS F:\GitHub\MDIS> git commit[0K[31G[?25h[?25lPS F:\GitHub\MDIS> git commit -0[0K[?25h[?25lPS F:\GitHub\MDIS> git commit -[0K[?25hm[0K[34G[?25lPS F:\GitHub\MDIS> git commit -m "[0K[?25h"[0K[35G[?25lPS F:\GitHub\MDIS> git commit -m "f"[0K[36G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "fi"[0K[37G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "f"[0K[36G[?25h[?25lPS F:\GitHub\MDIS> git commit -m ""[0K[35G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "F"[0K[36G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "Fi"[0K[37G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "Fir"[0K[38G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "Firs"[0K[39G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "First"[0K[40G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "First "[0K[41G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "First c"[0K[42G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "First co"[0K[43G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "First com"[0K[44G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "First comm"[0K[45G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "First commi"[0K[46G[?25h[?25lPS F:\GitHub\MDIS> git commit -m "First commit"[0K[47G[?25h[48G[?25l
-[0K[?25h[master (root-commit) 69c4fb0] First commit[0K[?25l
- 1 file changed, 0 insertions(+), 0 deletions(-)[0K
- create mode 100644 README.md[0K
-PS F:\GitHub\MDIS>[0K[20G[?25h[?25lPS F:\GitHub\MDIS> g[0K[?25hi[0Kt[0K[24G[?25lPS F:\GitHub\MDIS> git r[0K[?25he[0Km[0Ko[0Kt[0Ke[0K[31G[?25lPS F:\GitHub\MDIS> git remote a[0K[?25hd[0Kd[0K[35G[?25lPS F:\GitHub\MDIS> git remote add o[0K[?25hr[0Ki[0Kg[0Ki[0Kn[0K[42G[?25lPS F:\GitHub\MDIS> git remote add origin h[0K[?25ht[0Kt[0Kop[0K[?25lPS F:\GitHub\MDIS> git remote add origin htto[0K[?25h[?25lPS F:\GitHub\MDIS> git remote add origin htt[0K[?25hp[0Ks[0KL[0K:[0K[?25lPS F:\GitHub\MDIS> git remote add origin httpsL[0K[?25h[?25lPS F:\GitHub\MDIS> git remote add origin https[0K[?25h:[0K/[0K/[0Kg[0Ki[0Kt[0Kh[0Ku[0Kb[0K.[0Kc[0Ko[0Km[0K/[0Ka[0Kn[0Ka[0Kr[0Ki[0Kn[0Ks[0Kk[0K/[0KM[0KD[0KI[0KS[0K.[0Kg[0Ki[0Kt[0K[79G[?25l
-[0K[?25hPS F:\GitHub\MDIS>[0K[20G[?25lPS F:\GitHub\MDIS> g[0K[?25hi[0Kt[0K[24G[?25lPS F:\GitHub\MDIS> git p[0K[?25hu[0Ks[0Kh[0K[29G[?25lPS F:\GitHub\MDIS> git push -[0K[?25hu[0K[32G[?25lPS F:\GitHub\MDIS> git push -u o[0K[?25hr[0Ki[0Kg[0Ki[0Kn[0K[39G[?25lPS F:\GitHub\MDIS> git push -u origin m[0K[?25ha[0Ks[0Kt[0Ke[0Kr[0K[46G[?25l
-[0K[?25hCounting objects: 3, done.[0K[?25l
-Writing objects: 100% (3/3), 226 bytes | 226.00 KiB/s, done.[0K
-Total 3 (delta 0), reused 0 (delta 0)[0K
-[0K[?25hTo https://github.com/anarinsk/MDIS.git[0K[?25l
- * [new branch]      master -> master[0K
-[0K[?25hBranch 'master' set up to track remote branch 'master' from 'origin'.[0K[?25l
-PS F:\GitHub\MDIS>[0K[20G[?25h[?25lPS F:\GitHub\MDIS> g[0K[?25hi[0Kt[0K[24G[?25lPS F:\GitHub\MDIS> git a[0K[?25hd[0Kd[0K[28G[?25lPS F:\GitHub\MDIS> git add .[0K[?25h[30G[?25l
+[0K[?25hPS F:\GitHub\MDIS>[0K[20G[?25lPS F:\GitHub\MDIS> g[0K[?25hi[0Kt[0K[24G[?25lPS F:\GitHub\MDIS> git s[0K[?25ht[0Ka[0Kt[0Ku[0Ks[0K[31G[?25l
+[0K[?25hOn branch master[0K[?25l
+Your branch is up to date with 'origin/master'.[0K
+[0K
+Changes not staged for commit:[0K
+  (use "git add/rm <file>..." to update what will be committed)[0K
+  (use "git checkout -- <file>..." to discard changes in working directory)[0K
+[0K
+        [0;31mmodified:   .Rproj.user/727CC020/console06/8DEFFE7E[0m[0K
+        [0;31mmodified:   .Rproj.user/727CC020/console06/INDEX001[0m[0K
+        [0;31mmodified:   .Rproj.user/727CC020/sources/prop/7E2276BA[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/33B8A2E0[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/33B8A2E0-contents[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/4A7B6864[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/4A7B6864-contents[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/5308E105[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/5308E105-contents[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/7EB10451-contents[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/8E3BF133-contents[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/C0ADB462[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/C0ADB462-contents[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/D79AE788[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/D79AE788-contents[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/F54040F[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/F54040F-contents[0m[0K
+        [0;31mdeleted:    .Rproj.user/727CC020/sources/s-D71AEF68/lock_file[0m[0K
+        [0;31mmodified:   .Rproj.user/shared/notebooks/1E980E6F-posting/1/s/chunks.json[0m[0K
+        [0;31mmodified:   code/code_analysis.R[0m[0K
+        [0;31mmodified:   documentation/posting.Rmd[0m[0K
+[0K
+Untracked files:[0K
+  (use "git add <file>..." to include in what will be committed)[0K
+[0K
+        [0;31m.gitignore[0m[0K
+[0K
+no changes added to commit (use "git add" and/or "git commit -a")[0K
+PS F:\GitHub\MDIS>[0K[20G[?25h[?25lPS F:\GitHub\MDIS> g[0K[?25hi[0Kt[0K[24G[?25lPS F:\GitHub\MDIS> git a[0K[?25hd[0Kd[0K[28G[?25lPS F:\GitHub\MDIS> git add ,.[0K[?25h[31G[30G[?25lPS F:\GitHub\MDIS> git add ,[0K[?25h[?25lPS F:\GitHub\MDIS> git add[0K[28G[?25h[?25lPS F:\GitHub\MDIS> git add .[0K[?25h[30G[?25l
 [0K[?25h

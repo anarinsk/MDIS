@@ -133,14 +133,14 @@ pick_x <- function(year, x, df, what_V4 = c(1,2)){
     dplyr::filter(., V1 == year, V4 %in% what_V4) %.>% 
     sample_n(., size = x, replace = T, weight = V99)
 }
-sim_ndraw <- function(n_draw, what_V4, vars_sel = vars_basic){
+sim_ndraw <- function(n_draw, what_V4, vars_sel = vars_basic, df=tbl){
 #  
   list(year = c(rep(2017,n_draw), rep(2018,n_draw)),  round=c(seq(1:n_draw), seq(1:n_draw))) -> itr_sch
   
   itr_sch %.>% 
     pmap_df(., 
       function(year, round) {
-        pick_x(year, 100, tbl, what_V4) %.>% 
+        pick_x(year, 100, df, what_V4) %.>% 
         mutate(., rd = unlist(round)[1]) 
       } 
     ) %.>% 
@@ -181,9 +181,9 @@ ttl2 %.>%
     group = "worker" 
   )-> ttl2_1
 
-ttl1_1 %.>% bind_rows(., ttl2_1) -> ttl3 
+ttl1_1 %.>% bind_rows(., ttl2_1) -> tbl_smr 
 
-ttl3 %.>% ggplot(.) + 
+tbl_smr %.>% ggplot(.) + 
   aes(x = rank_sample, y = Y18-Y17) + 
   geom_col(color = "black") + 
   facet_grid(.~group, scales = "free_y") + 
@@ -192,7 +192,7 @@ ttl3 %.>% ggplot(.) +
   ylab("Quarterly income") +
   theme_economist()
   
-ttl3 %.>% ggplot(.) + 
+tbl_smr %.>% ggplot(.) + 
   aes(x = rank_sample, y = (Y18-Y17)/Y17) + 
   geom_col(color = "black") + 
   facet_wrap(~group, ncol=2) + 
@@ -200,3 +200,5 @@ ttl3 %.>% ggplot(.) +
   xlab("rank(descending order)") + 
   ylab("Change(%)") +
   theme_economist() 
+
+tbl_smr %.>% dplyr::filter(., Y18 - Y17 > 0) -> vdf 
