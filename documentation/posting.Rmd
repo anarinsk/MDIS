@@ -66,6 +66,7 @@ readRDS("./data/tbl_smr.rds") -> tbl_smr
 
 ```{r eval=FALSE, include=FALSE}
 
+
 vars_basic <- c("V100", "V101", "V102", "V103")
 
 pick_x <- function(year, x, df, what_V4 = c(1,2)){
@@ -123,6 +124,7 @@ ttl2 %.>%
 
 ttl1_1 %.>% bind_rows(., ttl2_1) -> tbl_smr 
 
+
 ```
 
 1만 번 샘플링한 위의 결과를 그림으로 나타내보자. 
@@ -159,7 +161,7 @@ tbl_smr %.>% ggplot(.) +
 
 # The code 
 
-분석한 코드는 모두 ()에 공유되어 있다. 
+분석한 코드는 모두 [github.com/anarinsk/MDIS](https://github.com/anarinsk/MDIS)에 공유되어 있다. 
 
 # 정리
 
