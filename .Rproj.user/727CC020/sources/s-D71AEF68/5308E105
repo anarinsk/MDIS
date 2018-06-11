@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1528709482292.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5308E105",
+    "lastKnownWriteTime" : 7308604914264011873,
+    "last_content_update" : 1528709482292,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "FDD4F869",
+        "caption" : "vdf",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=vdf&cache_key=FDD4F869",
+        "displayedObservations" : 157,
+        "environment" : "",
+        "object" : "vdf",
+        "preview" : 0,
+        "totalObservations" : 157,
+        "variables" : 4
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

@@ -1,0 +1,2 @@
+getwd()
+saveRDS(tbl_smr, "tbl_smr.rds")

@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1528706479214.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "2|45|12|0|\n",
+    "hash" : "284732119",
+    "id" : "33B8A2E0",
+    "lastKnownWriteTime" : 1528706521,
+    "last_content_update" : 1528706521375,
+    "path" : "F:/GitHub/MDIS/code_header.R",
+    "project_path" : "code_header.R",
+    "properties" : {
+        "cursorPosition" : "15,55",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

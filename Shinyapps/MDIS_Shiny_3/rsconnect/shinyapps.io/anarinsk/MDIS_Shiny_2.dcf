@@ -1,0 +1,13 @@
+name: MDIS_Shiny_2
+title: MDIS_Shiny_2
+username:
+account: anarinsk
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 356512
+bundleId: 1418630
+url: https://anarinsk.shinyapps.io/MDIS_Shiny_2/
+when: 1528455474.53188
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: data/.DS_Store
