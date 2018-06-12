@@ -8,9 +8,8 @@ output:
     toc_float: true
 ---
 
-<a href="/anarinsk/anarinsk.github.io/barefoot_min.html"></a>
-
 ```{r setup, include=FALSE}
+htmltools::includeHTML("https://github.com/anarinsk/anarinsk.github.io/blob/master/barefoot_min.html")
 #
 source("./code_header.R")
 readRDS("./data/tbl_gdpd.rds") -> tbl 
