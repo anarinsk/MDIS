@@ -174,7 +174,9 @@ gg_dst2_1 + gg_dst2_2 + plot_layout(ncol = 1, heights = c(2, 2))
 
 # The code 
 
-분석한 코드는 모두 [github.com/anarinsk/MDIS](https://github.com/anarinsk/MDIS)에 공유되어 있다. 마음껏 가져다 쓰시라! (그런데 사실 MDIS의 사용 규약에는 어긋나더라...)
+[github.com/anarinsk/MDIS](https://github.com/anarinsk/MDIS)
+
+이 문서를 포함해 모든 소스는 리퍼지토리에 있다. 마음껏 가져다 쓰시라! (그런데 MDIS 사용 규약에는 어긋나더라...)
 
 # 정리
 
