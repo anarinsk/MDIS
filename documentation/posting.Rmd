@@ -64,7 +64,7 @@ readRDS("./data/tbl_smr.rds") -> tbl_smr
 
 100 분위 소득이니 속편하게 샘플 수는 100 개로 하자. 그리고 이런 100개 단위 추출을 충분히 많이 반복한 후, 각 분위별로 소득의 평균을 구해서 비교한다. 과학적인 방법이 아닐지 모르지만, 제법 그럴 듯한 방법이 아닌가. 코드를 일부분 옮기면 다음과 같다. 
 
-```{r eval=FALSE, include=TRUE}
+```{r echo=FALSE}
 vars_basic <- c("V100", "V101", "V102", "V103")
 
 pick_x <- function(year, x, df, what_V4 = c(1,2)){
@@ -105,27 +105,29 @@ sim_summary <- function(var, funs, df){
       )
 }
 
-sim_ndraw(10000, c(1,2), c(vars_basic, "V106")) -> ttl1
-sim_ndraw(10000, c(1), c(vars_basic, "V106"))   -> ttl2
-
-ttl1 %.>% 
-  sim_summary(V101, mean, .) %.>% 
-  mutate(., 
-    group = "all" 
-  )-> ttl1_1
-
-ttl2 %.>% 
-  sim_summary(V101, mean, .)  %.>% 
-  mutate(., 
-    group = "worker" 
-  )-> ttl2_1
-
-ttl1_1 %.>% bind_rows(., ttl2_1) -> tbl_smr 
+#sim_ndraw(10000, c(1,2), c(vars_basic, "V106")) -> ttl1
+#sim_ndraw(10000, c(1), c(vars_basic, "V106"))   -> ttl2
 ```
 
 1만 번 샘플링한 위의 결과를 그림으로 나타내보자. 
 
 ```{r echo=FALSE}
+readRDS("./data/ttl1.rds") -> ttl1 
+readRDS("./data/ttl2.rds") -> ttl2 
+
+ttl1 %.>% 
+  sim_summary(V101, mean, .) %.>% 
+  mutate(., 
+    group = "all households" 
+  )-> ttl1_1
+
+ttl2 %.>% 
+  sim_summary(V101, mean, .)  %.>% 
+  mutate(., 
+    group = "labor-income households" 
+  )-> ttl2_1
+
+ttl1_1 %.>% bind_rows(., ttl2_1) -> tbl_smr 
 tbl_smr %.>% ggplot(.) + 
   aes(x = rank_sample, y = Y18-Y17) + 
   geom_col(color = "black") + 
