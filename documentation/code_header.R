@@ -14,3 +14,4 @@ install_load_package <- function(packages_v){
 #
 c("conflicted", "tidyverse", "wrapr", "here") -> .; install_load_package(.)
 c("spatstat", "ggthemes") -> .; install_load_package(.)
+c("patchwork") -> .; install_load_package(.)

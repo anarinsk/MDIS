@@ -8,7 +8,7 @@ output:
     toc_float: true
 ---
 
-```{r message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+```{r setup, include=FALSE}
 #
 source("./code_header.R")
 readRDS("./data/tbl_gdpd.rds") -> tbl 
@@ -21,6 +21,7 @@ readRDS("./data/tbl_smr.rds") -> tbl_smr
 이 글은 언제나 '일시적'입니다. 문제가 생기면 항상 수정되거나 폐기됩니다. 대신 수정될 경우 변경 역사는 아래와 같이 간단히 남길 예정입니다. 각종 문의는 <anarinsk@gmail.com>로. 
 
   1. 20180611 오타 수정 
+  2. 20180612 샘플링 분포 그림 추가 
 
 # 최근의 논란 
 
@@ -64,7 +65,6 @@ readRDS("./data/tbl_smr.rds") -> tbl_smr
 100 분위 소득이니 속편하게 샘플 수는 100 개로 하자. 그리고 이런 100개 단위 추출을 충분히 많이 반복한 후, 각 분위별로 소득의 평균을 구해서 비교한다. 과학적인 방법이 아닐지 모르지만, 제법 그럴 듯한 방법이 아닌가. 코드를 일부분 옮기면 다음과 같다. 
 
 ```{r eval=FALSE, include=TRUE}
-
 vars_basic <- c("V100", "V101", "V102", "V103")
 
 pick_x <- function(year, x, df, what_V4 = c(1,2)){
@@ -121,12 +121,11 @@ ttl2 %.>%
   )-> ttl2_1
 
 ttl1_1 %.>% bind_rows(., ttl2_1) -> tbl_smr 
-
 ```
 
 1만 번 샘플링한 위의 결과를 그림으로 나타내보자. 
 
-```{r}
+```{r echo=FALSE}
 tbl_smr %.>% ggplot(.) + 
   aes(x = rank_sample, y = Y18-Y17) + 
   geom_col(color = "black") + 
@@ -155,6 +154,21 @@ tbl_smr %.>% ggplot(.) +
 
 소득 규모에 따른 효과를 보기 위해서 각 구간별로 퍼센트 변화를 살펴 봤다. 그림에서 보듯이 V자 형태를 나타내고 있다. 이 그림이 맞다면, 증가냐 감소냐의 이분법적인 틀을 벗어나 보면, 두 기간 사이에 소득 증가는 상위층을수록 하위층일수록 많이 누렸다. 중간층에게는 상대적으로 덜 돌아갔다. 
 
+## 샘플링 분포에 관해서 
+
+이렇게 뽑힌 100 분위 소득의 경우 각 분위별로 1 만개의 관찰 수를 지니고 있다. 이 관찰 수들의 분포는 어떤 모양일까? 호기심에 한번 그려보았다. 
+
+```{r echo=FALSE, message=FALSE}
+readRDS("./data/gg_dst1_1.rds") -> gg_dst1_1
+readRDS("./data/gg_dst1_2.rds") -> gg_dst1_2
+readRDS("./data/gg_dst2_1.rds") -> gg_dst2_1
+readRDS("./data/gg_dst2_2.rds") -> gg_dst2_2
+#
+gg_dst1_1 + gg_dst1_2 + plot_layout(ncol = 1, heights = c(2, 2))
+gg_dst2_1 + gg_dst2_2 + plot_layout(ncol = 1, heights = c(2, 2))
+```
+
+그림에서 보듯이 상위 10%에 대해서는 분포가 별다른 의미를 지니지 않는다. "가계동향조사"로 상위층 특히 극상위층의 소득을 추정하는 작업에 문제가 있다는 그간의 코멘트에 대해서 끄덕이게 되는 대목이다. 
 
 # The code 
 
