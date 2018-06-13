@@ -221,14 +221,16 @@ tbl_smr %.>% ggplot(.) +
 
 ### Try ggridges() ----
 
-sim_ndraw_pll(20000, c(1,2), c(vars_basic, "V106")) -> ttl1
+sim_ndraw_pll(10000, c(1,2), c(vars_basic, "V106")) -> ttl1
 sim_ndraw_pll(10000, c(1), c(vars_basic, "V106"))   -> ttl2
 
-## Save ttl1, ttl2 for later use 
-# saveRDS(ttl1, "./data/ttl1.rds")
-# saveRDS(ttl2, "./data/ttl2.rds")
-# readRDS("./data/ttl1.rds") -> ttl1
-# readRDS("./data/ttl2.rds") -> ttl2
+getwd()
+
+## Save ttl1, ttl2 for documenation use 
+# saveRDS(ttl1, "./documentation/data/ttl1.rds")
+# saveRDS(ttl2, "./documentation/data/ttl2.rds")
+# readRDS("./documentation/data/ttl1.rds") -> ttl1
+# readRDS("./documentation/data/ttl2.rds") -> ttl2
 
 ttl1 %.>%
   group_by(., V1, rd) %.>% 
@@ -242,57 +244,41 @@ ttl2 %.>%
   select(., V1, rd, V101) %.>% 
   mutate(., rank_sample = seq(1:100)) -> ttl2
 
-ttl1 %.>% 
-  dplyr::filter(., V1==2017) %.>%
-  dplyr::filter(., rank_sample %in% c(1,11,21,31,41,51,61,71,81,91)) %.>%
-  ggplot(.) + 
-  aes(x = V101, y = factor(rank_sample)) + 
-  ggtitle("Samling Distribution of 2017 Q1 for All Households") + 
-  xlab("current income") + 
-  ylab("rank(descending order)") +
-  geom_density_ridges(scale=3) + 
-  theme_economist() -> gg_dst1_1
 
-ttl1 %.>% 
-  dplyr::filter(., V1==2018) %.>%
-  dplyr::filter(., rank_sample %in% c(1,11,21,31,41,51,61,71,81,91)) %.>%
-  ggplot(.) + 
-  aes(x = V101, y = factor(rank_sample)) + 
-  ggtitle("Samling Distribution of 2018 Q1 for All Households") + 
-  xlab("current income") + 
-  ylab("rank(descending order)") +
-  geom_density_ridges(scale=3) + 
-  theme_economist() -> gg_dst1_2
+
+plot_ridges <- function(df, year, percent_block, scale=3, style=T){
   
-  ttl2 %.>% 
-    dplyr::filter(., V1==2017) %.>%
-    dplyr::filter(., rank_sample %in% c(1,11,21,31,41,51,61,71,81,91)) %.>%
+  ifelse(deparse(substitute(df))=="ttl1", "All Households", "Labor-income Households") -> name_hh
+  
+  df %.>% 
+    dplyr::filter(., V1==year) %.>%
+    dplyr::filter(., rank_sample %in% percent_block) %.>%
     ggplot(.) + 
     aes(x = V101, y = factor(rank_sample)) + 
-    ggtitle("Samling Distribution of 2017 Q1 for Labor-income Households") + 
-    xlab("labor income") + 
+    ggtitle(str_glue("Samling Distribution of {year} Q1 for {name_hh}")) + 
+    xlab("current income") + 
     ylab("rank(descending order)") +
-    geom_density_ridges(scale=3) + 
-    theme_economist() -> gg_dst2_1
+    geom_density_ridges(scale=scale) -> g1
   
-  ttl2 %.>% 
-    dplyr::filter(., V1==2018) %.>%
-    dplyr::filter(., rank_sample %in% c(1,11,21,31,41,51,61,71,81,91)) %.>%
-    ggplot(.) + 
-    aes(x = V101, y = factor(rank_sample)) + 
-    ggtitle("Samling Distribution of 2018 Q1 for Labor-income Households") + 
-    xlab("labor income") + 
-    ylab("rank(descending order)") +
-    geom_density_ridges(scale=3) + 
-    theme_economist() -> gg_dst2_2
+  if(style==T){g1 + theme_economist()} else {g1}
+}
+
+plot_ridges(ttl1, 2017, c(1,11,21,31,41,51,61,71,81,91)) -> gg_dst1_1
+plot_ridges(ttl1, 2018, c(1,11,21,31,41,51,61,71,81,91)) -> gg_dst1_2
+plot_ridges(ttl2, 2017, c(1,11,21,31,41,51,61,71,81,91)) -> gg_dst2_1
+plot_ridges(ttl2, 2018, c(1,11,21,31,41,51,61,71,81,91)) -> gg_dst2_2
+
+plot_ridges(ttl1, 2018, c(1,2,3,4,5,6,7,8,9,10)) -> gg_dst_high
+
 
 #devtools::install_github("thomasp85/patchwork")
 library(patchwork)
   
-saveRDS(gg_dst1_1, "gg_dst1_1.rds")
-saveRDS(gg_dst1_2, "gg_dst1_2.rds")
-saveRDS(gg_dst2_1, "gg_dst2_1.rds")
-saveRDS(gg_dst2_2, "gg_dst2_2.rds")
+saveRDS(gg_dst1_1, "./documentation/data/gg_dst1_1.rds")
+saveRDS(gg_dst1_2, "./documentation/data/gg_dst1_2.rds")
+saveRDS(gg_dst2_1, "./documentation/data/gg_dst2_1.rds")
+saveRDS(gg_dst2_2, "./documentation/data/gg_dst2_2.rds")
+saveRDS(gg_dst_high, "./documentation/data/gg_dst_high.rds")
 
 gg_dst1_1 + gg_dst1_2 + plot_layout(ncol = 1, heights = c(1, 1))
 gg_dst2_1 + gg_dst2_2 + plot_layout(ncol = 1, heights = c(1, 1))
